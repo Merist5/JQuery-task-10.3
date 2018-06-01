@@ -1,0 +1,43 @@
+$width: 400px;
+$height: 300px;
+$margin: 0 auto;
+$radius: 5%;
+$white: #fff;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $white;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+#carousel {
+  width: $width;
+  height: $height;
+  margin: $margin;
+  border: 5px solid #ccc;
+  border-radius: $radius;
+  overflow: hidden;
+  ul {
+    list-style-type: none;
+    width: 2000px;
+    height: $height;
+    display: block;
+    margin: 0;
+    padding: 0;
+    li {
+      width: $width;
+      height: $height;
+      list-style-type: none;
+      float: left;
+      img {
+        width: $width;
+        height: $height;
+      }
+    }
+  }
+}
